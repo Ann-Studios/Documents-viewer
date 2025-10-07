@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policies</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Privacy Policies</h1>
+        <nav>
+            <ul>
+                <li><a href="/privacy-policy/notes">Notes</a></li>
+                <li><a href="/privacy-policy/financer">Financer</a></li>
+                <li><a href="/privacy-policy/productiv">Productiv</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Select an app to view its privacy policy.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Your Company</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

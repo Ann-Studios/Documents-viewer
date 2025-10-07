@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: app-policies
+    env: static
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    routes:
+      - type: rewrite
+        source: /privacy-policy/(.*)
+        destination: /docs/privacy-policy/$1/index.html
+      - type: redirect
+        source: /privacy-policy
+        destination: /docs/privacy.html
+        statusCode: 301
+
